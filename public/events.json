@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "title": "Weddings",
+      "category_name": "Weddings",
+      "image": "https://i.ibb.co/hgvYxcd/wedding.png",
+      "service_charge": "$5,000",
+      "details": "Our wedding planning services are dedicated to creating your dream wedding. We understand that your wedding day is one of the most significant moments in your life, and we are here to make it absolutely perfect. From choosing the perfect venue to designing exquisite decor, coordinating with caterers, and managing every little detail, we ensure that your wedding is a seamless and magical experience. Our team of experts will work closely with you to bring your vision to life. We take care of everything, allowing you to enjoy every moment of your special day.Our wedding planners are not just professionals; they are dream-weavers who bring your fairytale wedding to life. We believe in personalized service, ensuring that every aspect of your wedding reflects your unique style and personality. We offer a range of wedding themes and ideas, from traditional to contemporary and destination weddings. Our extensive network of vendors and partners ensures that you have access to the best in the industry. From the invitations to the farewell, we leave no stone unturned in making your wedding an unforgettable celebration of love and union."
+    },
+    {
+      "id": 2,
+      "title": "Birthday Parties",
+      "category_name": "Birthday Parties",
+      "image": "https://i.ibb.co/1rbtdFM/birthday-party.png",
+      "service_charge": "$500",
+      "details": "Whether you're celebrating your child's first birthday or a milestone in your life, our birthday party planning services have got you covered. We create vibrant and memorable birthday parties that cater to your unique preferences and themes. Our team will handle the invitations, decorations, entertainment, and catering, ensuring that your guests have a blast. We pay attention to every detail, so you can relax and enjoy the celebration with your loved ones. Our dedicated birthday party planners are creative wizards who can turn your ideas into a spectacular reality. We understand that every birthday is special, and it deserves a celebration to match. We offer a wide range of themes and entertainment options, ensuring that your party is a hit with guests of all ages. From superheroes to princesses, we bring your child's fantasy to life. For adults, we can create elegant soirées or fun and quirky bashes. Let us handle the logistics, so you can be the life of the party."
+    },
+    {
+      "id": 3,
+      "title": "Anniversaries",
+      "category_name": "Anniversaries",
+      "image": "https://i.ibb.co/9c5V3Xb/annivarsary.png",
+      "service_charge": "$1,000",
+      "details": "Celebrate your love and commitment with an anniversary party that tells your unique love story. Our anniversary planning services are designed to make this special day unforgettable. From choosing a romantic setting to crafting a personalized theme, we take care of it all. We work closely with you to include sentimental details that reflect your journey as a couple. Let us handle the logistics, so you can focus on each other and the joy of your anniversary.Our anniversary planners are experts at creating a romantic ambiance that rekindles the sparks of your relationship. Whether you're celebrating one year or fifty years together, we ensure that your anniversary is filled with love and cherished memories. We can arrange for intimate dinners, grand parties, or even surprise getaways. Our attention to detail ensures that your anniversary party is a heartfelt tribute to your enduring love."
+    },
+    {
+      "id": 4,
+      "title": "Engagement Parties",
+      "category_name": "Engagement Parties",
+      "image": "https://i.ibb.co/qsD10DJ/Engagement.jpg",
+      "service_charge": "$800",
+      "details": "Your engagement is a milestone worth celebrating, and we're here to make it spectacular. Our engagement party planning services are all about creating a captivating event that sets the stage for your journey together. We handle every aspect, from venue selection to decor, entertainment, and catering. Your engagement party will be a reflection of your love and an event to remember for both you and your guests.Our engagement planners understand the significance of this moment when two lives unite in love. We offer a range of engagement party ideas, from elegant cocktail parties to casual garden affairs. Our team will work closely with you to create an engagement party that reflects your unique personalities. Let us handle the logistics and design, ensuring that your engagement party is a prelude to a lifetime of happiness."
+    },
+    {
+      "id": 5,
+      "title": "Retirement Parties",
+      "category_name": "Retirement Parties",
+      "image": "https://i.ibb.co/CwykqVC/retirement.jpg",
+      "service_charge": "$1,200",
+      "details": "After years of hard work, you deserve a retirement party that honors your dedication and achievements. Our retirement party planning services take the stress out of the equation. We'll help you choose the perfect location, arrange for meaningful speeches, and create an atmosphere that reflects your personality and accomplishments. Your retirement party will be a moment of pride and relaxation.Our retirement party planners are experienced in honoring the retiree's contributions and aspirations. Whether it's a corporate retirement party or a personal celebration, we ensure that it's a fitting send-off. From nostalgic photo displays to entertaining speeches, we'll plan every aspect to make it a retirement party that you and your guests will cherish. Let us create a memorable transition from work to a well-deserved retirement."
+    },
+    {
+      "id": 6,
+      "title": "Baby Shower",
+      "category_name": "Baby Shower",
+      "image": "https://i.ibb.co/ZWFbVq0/baby-shower.jpg",
+      "service_charge": "$400",
+      "details": "Welcome the arrival of your little one with a heartwarming baby shower. Our baby shower planning services are all about creating a day filled with joy and anticipation. We handle the decorations, games, and catering, ensuring that your baby shower is a memorable and stress-free occasion. Let us take care of the details, so you can cherish the moments leading up to your baby's arrival.Our baby shower planners understand the importance of this special day for both parents and their loved ones. We can organize traditional baby showers, gender-reveal parties, or unique and themed gatherings. From baby-themed decor to fun games and delectable food, we ensure that your baby shower is a reflection of your excitement and love for your upcoming bundle of joy. Let us create an atmosphere that's as warm and welcoming as the new life you're about to bring into the world."
+    }
+  ]

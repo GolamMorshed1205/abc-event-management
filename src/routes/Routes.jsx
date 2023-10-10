@@ -3,6 +3,7 @@ import Root from "../layouts/Root";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Home/Login/Login";
 import Register from "../pages/Home/Register/Register";
+import Event from "../components/Event/Event";
 
 const router = createBrowserRouter([
     {
@@ -11,7 +12,8 @@ const router = createBrowserRouter([
       children: [
         {
             path: "/" ,
-            element: <Home></Home> 
+            element: <Home></Home> ,
+            loader : () => fetch ('events.json')
         },
         {
           path: "/login" ,
@@ -20,6 +22,10 @@ const router = createBrowserRouter([
         {
           path: "/register" ,
           element: <Register></Register>
+        },
+        {
+          path: "/event/:id" ,
+          element: <Event></Event>
         }
       ]
     },
