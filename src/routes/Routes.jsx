@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Home/Login/Login";
 import Register from "../pages/Home/Register/Register";
 import Event from "../components/Event/Event";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
         {
             path: "/" ,
             element: <Home></Home> ,
-            loader : () => fetch ('events.json')
+            loader : () => fetch ('/events.json')
         },
         {
           path: "/login" ,
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/event/:id" ,
-          element: <Event></Event>
+          element: <PrivateRoute><Event></Event></PrivateRoute>
         }
       ]
     },
