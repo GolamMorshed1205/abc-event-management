@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images/ABC (1).png";
+import logo from "../../assets/images/abc-event.png";
 import userPhoto from "../../assets/images/user.png";
-import { FaBeer } from 'react-icons/fa';
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -21,14 +20,15 @@ const Navbar = () => {
   }
 
   const navLinks = <>
-    <li><NavLink to={"/"}>Home</NavLink></li>
-    <li><NavLink to={"/services"}>Services</NavLink></li>
-    <li><NavLink to={"/about"}>About Us</NavLink></li>
-    <FaBeer></FaBeer>
+    <li className="tab tab-lg"><NavLink to={"/"}>Home</NavLink></li>
+    <li className="tab tab-lg"><NavLink to={"/services"}>Services</NavLink></li>
+    <li className="tab tab-lg"><NavLink to={"/order"}>Order</NavLink></li>
+    <li className="tab tab-lg"><NavLink to={"/about"}>About Us</NavLink></li>
+    <li className="tab tab-lg"><NavLink to={"/contact"}>Contact Us</NavLink></li>
 
   </>
   return (
-    <div className="navbar bg-base-100 mb-10">
+    <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl"><img className="h-[10vh]" src={logo} alt="" /></a>
+        <NavLink to={"/"}><img className="h-[15vh]" src={logo} alt="" /></NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
