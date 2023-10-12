@@ -1,13 +1,21 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import { FacebookAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../../firebase/firebase.config";
 
 const Login = () => {
 
     const {logIn} = useContext (AuthContext)
     const location = useLocation () ;
-    console.log ('location' , location)
     const navigate = useNavigate() ;
+
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    
+    const providerFb = new FacebookAuthProvider();
+
+
 
     const handleLogin = e => {
         e.preventDefault()
@@ -18,13 +26,39 @@ const Login = () => {
         logIn( email , password) 
         .then (result => {
             console.log (result.user)
+            navigate (location?.state ? location.state : '/')
+        })
+        .catch (error => {
+            console.error (error)
+        })        
+    }
+ 
+    const handleGoogleLogin =  () => {
+        
+        signInWithPopup (auth , provider)
+        .then(result => {
+            const user = result.user ;
+            console.log (user)
 
             navigate (location?.state ? location.state : '/')
         })
         .catch (error => {
             console.error (error)
-        })
+        })        
+    }
+
+    const handleFbeLogin =  () => {
         
+        signInWithPopup (auth , providerFb)
+        .then(result => {
+            const user = result.user ;
+            console.log (user)
+
+            navigate (location?.state ? location.state : '/')
+        })
+        .catch (error => {
+            console.error (error)
+        })        
     }
 
     return (
@@ -36,8 +70,8 @@ const Login = () => {
                         <p>Please create an account to avail services.</p>
                         <Link to={"/register"}><button className="btn btn-info">Create An Account</button></Link>
                         <h1 className="text-4xl">OR</h1>
-                        <button className="btn btn-active">Sign in with Google</button>
-                        <button className="btn btn-info">Sign in with Facebook</button>
+                        <button onClick={handleGoogleLogin} className="btn btn-active">Sign in with Google</button>
+                        <button onClick={handleFbeLogin} className="btn btn-info">Sign in with Facebook</button>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
